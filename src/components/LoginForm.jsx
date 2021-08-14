@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import './Own.css'
+import {ReactComponent as ReactLogo} from '../assets/undraw_Share_opinion_re_4qk7.svg';
+import {ReactComponent as ReactLogo2} from '../assets/undraw_ideas_s70l.svg';
 import axios from 'axios';
 
 const projectID = '3cf80e46-84ed-492f-92ba-65a4f84de6c8';
@@ -28,6 +31,7 @@ const Modal = () => {
 
   return (
     <div className="wrapper">
+      <ReactLogo2 className="sittingSVG"/>
       <div className="form">
         <h1 className="title">Chat Application</h1>
         <form onSubmit={handleSubmit}>
@@ -41,6 +45,7 @@ const Modal = () => {
         </form>
         <h1>{error}</h1>
       </div>
+      <ReactLogo className="phoneSVG" />
     </div>
 
   );
